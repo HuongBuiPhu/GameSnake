@@ -31,10 +31,12 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
+//khoi tao
 void init() {
 	glClearColor(0, 0, 0, 1);
 }
 
+//hien thi
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
 
@@ -55,6 +57,7 @@ void display() {
 	glutSwapBuffers();
 }
 
+//he toa do va phep chieu
 void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 	glMatrixMode(GL_PROJECTION);
@@ -63,11 +66,13 @@ void reshape(int w, int h) {
 	glOrtho(0, 40, 40, 0, 10, 0);
 }
 
+//ham thoi gian
 void timer(int) {
 	glutPostRedisplay();
 	glutTimerFunc(1000 / FPS, timer, 0);
 }
 
+//ham dieu khien
 void input(int key, int, int) {
 	switch (key)
 	{
@@ -100,6 +105,7 @@ void input(int key, int, int) {
 	}
 }
 
+//ham dieu khien
 void input2(unsigned char key, int, int) {
 	switch (key)
 	{
